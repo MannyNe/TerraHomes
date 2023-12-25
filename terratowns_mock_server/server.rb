@@ -202,7 +202,7 @@ class TerraTownsMockServer < Sinatra::Base
       halt 422, "Malformed JSON"
     end
 
-    # Validate payload data
+    # Validate payload data, and update the domain name enforcing update
     name = payload["name"]
     description = payload["description"]
     content_version = payload["content_version"]
@@ -236,7 +236,7 @@ class TerraTownsMockServer < Sinatra::Base
       error 404, "failed to find home with provided uuid and bearer token"
     end
 
-    # delete from mock database
+    # delete from mock database, an update.
     uuid = $home[:uuid]
     $home = {}
     { uuid: uuid }.to_json
