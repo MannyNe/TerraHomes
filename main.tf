@@ -34,8 +34,7 @@ best TV series are low though. I'll be liting the top 3 on the list.
 All of these are personal opinions, you can specify yours as well :)
 DESCRIPTION
   domain_name = module.home_tvseries_hosting.domain_name
-  //domain_name     = "3fdq3gzhy.cloudfront.net"
-  town            = "missingo"
+  town            = "video-valley"
   content_version = var.tvseries.content_version
 }
 
@@ -54,6 +53,6 @@ adding up some spices combining it with the Injera itself. It's the best dish
 out there for me, So we'll get on with making one :). ሰላም ሃበሾች ፡)
 DESCRIPTION
   domain_name     = module.home_food_hosting.domain_name
-  town            = "missingo"
+  town            = "cooker-cove"
   content_version = var.food.content_version
 }
